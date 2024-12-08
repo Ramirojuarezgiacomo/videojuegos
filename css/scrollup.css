@@ -1,0 +1,18 @@
+.simplescrollup__button {
+	position: fixed;
+	bottom: 32px;
+	right: 32px;
+	transition: 0.5s all;
+	z-index: 10000;
+	cursor: pointer;
+}
+.simplescrollup__button--show {
+	transform: translateX(0);
+}
+.simplescrollup__button--hide {
+	transform: translateX(30px);
+	opacity: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
